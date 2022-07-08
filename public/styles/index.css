@@ -128,15 +128,16 @@ p {
   font-size: 16px;
 }
 
-.container {
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+button {
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
 }
 
 .mobile-header {
-  padding-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 1em 1.5em 1em;
 }
 
 .hero-image {
@@ -144,7 +145,7 @@ p {
 }
 
 .hero-cta-section {
-  padding-top: 2em;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,4 +168,19 @@ p {
 }
 .hero-cta-section .client-logo-container #audiophile {
   width: 70px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  height: 46px;
+  border-radius: 15px;
+}
+
+.cta-button {
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  font-weight: 700;
+  width: 150px;
 }/*# sourceMappingURL=index.css.map */

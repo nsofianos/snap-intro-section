@@ -1,0 +1,14 @@
+button {
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  height: 46px;
+  border-radius: 15px;
+}
+
+.cta-button {
+  background-color: $neutralClrBlack;
+  color: $neutralClrWhite;
+  font-weight: $fontWeightBold;
+  width: 150px;
+}
