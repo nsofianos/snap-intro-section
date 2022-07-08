@@ -126,4 +126,15 @@ h1 {
 p {
   line-height: 1.5;
   font-size: 16px;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-header {
+  padding-top: 26px;
 }/*# sourceMappingURL=index.css.map */
