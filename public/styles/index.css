@@ -137,4 +137,34 @@ p {
 
 .mobile-header {
   padding-top: 26px;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-cta-section {
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-cta-section .cta-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.hero-cta-section .client-logo-container {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-cta-section .client-logo-container .client-logo {
+  width: 25%;
+  padding: 0.4em;
+  height: 100%;
+}
+.hero-cta-section .client-logo-container #audiophile {
+  width: 70px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+.hero-image {
+  width: 100%;
+}
+
+.hero-cta-section {
+  padding-top: 2em;
+  @include flexContainer(center);
+  flex-direction: column;
+
+  .cta-content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .client-logo-container {
+    margin-top: 1em;
+    @include flexContainer(center);
+    .client-logo {
+      width: 25%;
+      padding: 0.4em;
+      height: 100%;
+    }
+    #audiophile {
+      width: 70px;
+    }
+  }
+}
