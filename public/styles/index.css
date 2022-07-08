@@ -106,4 +106,24 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 41%);
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 8%);
+  font-size: 35px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */

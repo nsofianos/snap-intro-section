@@ -1,8 +1,10 @@
 @import "./utility/variables";
 @import "./utility/mixins";
 
-@import "./base/_reset";
+@import "./base/reset";
 @import "./base/typography";
 
 @import "./layout/header";
 @import "./layout/sidebar";
+
+@import "./components/buttons";

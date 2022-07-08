@@ -1,0 +1,19 @@
+body {
+  font-size: $fontMedium;
+  font-family: $fontMain;
+  font-weight: $fontWeightLight;
+  color: $neutralClrGrey;
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  font-weight: $fontWeightBold;
+  color: $neutralClrBlack;
+  font-size: 35px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: $fontSmall;
+}
