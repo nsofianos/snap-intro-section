@@ -35,14 +35,13 @@
       transition: 0.7s;
       overflow-y: hidden;
 
-      .feature {
+      .submenu-icon {
         margin-right: 0.8em;
         height: 20px;
         width: 18px;
       }
     }
-    .features.active,
-    .company.active {
+    .sub-menu.active {
       height: 60%;
     }
   }

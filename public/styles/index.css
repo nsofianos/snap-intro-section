@@ -187,13 +187,12 @@ a {
   transition: 0.7s;
   overflow-y: hidden;
 }
-.sidebar .menu .sub-menu .feature {
+.sidebar .menu .sub-menu .submenu-icon {
   margin-right: 0.8em;
   height: 20px;
   width: 18px;
 }
-.sidebar .menu .features.active,
-.sidebar .menu .company.active {
+.sidebar .menu .sub-menu.active {
   height: 60%;
 }
 .sidebar .sidebar-button-container {
