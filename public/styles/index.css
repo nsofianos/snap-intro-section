@@ -185,7 +185,7 @@ a {
   border: 1px solid hsl(0deg, 0%, 8%);
 }
 
-.is-active {
+.sidebar.active {
   width: 60vw;
 }
 
@@ -217,6 +217,15 @@ a {
 }
 .hero-cta-section .client-logo-container #audiophile {
   width: 70px;
+}
+
+.overlay.active {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+  position: fixed;
+  background-color: #060606;
+  transition: 1s;
 }
 
 button {
