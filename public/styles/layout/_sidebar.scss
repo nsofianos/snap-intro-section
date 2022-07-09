@@ -20,7 +20,8 @@
     width: 100%;
     .menu-item {
       @include flexContainer(flex-start);
-      margin-top: 1.5em;
+      margin-top: 20px;
+      min-height: 20px;
 
       .menu-arrow {
         margin-left: 10px;
@@ -41,8 +42,11 @@
         width: 18px;
       }
     }
-    .sub-menu.active {
-      height: 60%;
+    .company.active {
+      height: 120px;
+    }
+    .features.active {
+      height: 160px;
     }
   }
   //sidebar buttons

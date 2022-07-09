@@ -174,7 +174,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 1.5em;
+  margin-top: 20px;
+  min-height: 20px;
 }
 .sidebar .menu .menu-item .menu-arrow {
   margin-left: 10px;
@@ -192,8 +193,11 @@ a {
   height: 20px;
   width: 18px;
 }
-.sidebar .menu .sub-menu.active {
-  height: 60%;
+.sidebar .menu .company.active {
+  height: 120px;
+}
+.sidebar .menu .features.active {
+  height: 160px;
 }
 .sidebar .sidebar-button-container {
   margin-top: 1em;
