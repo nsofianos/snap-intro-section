@@ -168,18 +168,36 @@ a {
   flex-direction: column;
   margin-top: 2em;
   padding: 1.5em;
+  width: 100%;
 }
 .sidebar .menu .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 1.5em;
 }
 .sidebar .menu .menu-item .menu-arrow {
   margin-left: 10px;
-  position: fixed;
+}
+.sidebar .menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+  height: 0;
+  transition: 0.7s;
+  overflow-y: hidden;
+}
+.sidebar .menu .sub-menu .feature {
+  margin-right: 0.8em;
+  height: 20px;
+  width: 18px;
+}
+.sidebar .menu .features.active,
+.sidebar .menu .company.active {
+  height: 60%;
 }
 .sidebar .sidebar-button-container {
-  width: 60vw;
   margin-top: 1em;
-  padding: 1.5em;
 }
 .sidebar .sidebar-button-container #register {
   border: 1px solid hsl(0deg, 0%, 8%);
@@ -246,7 +264,7 @@ button {
 
 .sidebar-button {
   height: 40px;
-  width: 100%;
+  min-width: 100%;
   background-color: hsl(0deg, 0%, 98%);
   font-size: 14px;
   color: hsl(0deg, 0%, 41%);

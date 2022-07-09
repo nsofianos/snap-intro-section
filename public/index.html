@@ -31,6 +31,7 @@
     <!-- Overlay -->
     <div class="overlay"></div>
 
+    <!-- Mobile Header -->
     <header class="mobile-header">
       <img class="snap-logo" src="./images/logo.svg" />
       <button class="menu-toggle">
@@ -41,10 +42,27 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <nav class="menu">
-        <a href="#" class="menu-item"
+        <!-- Features Menu -->
+        <a href="#" class="menu-item features-toggle"
           >Features
           <img class="menu-arrow" src="./images/icon-arrow-down.svg" />
         </a>
+        <div class="sub-menu features">
+          <a href="#" class="menu-item">
+            <img class="feature" src="./images/icon-todo.svg">Todo List</img>
+          </a>
+          <a href="#" class="menu-item">
+            <img class="feature" src="./images/icon-calendar.svg">Calendar</img>
+          </a>
+          <a href="#" class="menu-item">
+            <img class="feature" src="./images/icon-reminders.svg">Reminders</img>
+          </a>
+          <a href="#" class="menu-item">
+            <img class="feature" src="./images/icon-planning.svg">Planning</img>
+          </a>
+        </div>
+
+        <!-- Company Menu -->
         <a href="#" class="menu-item"
           >Company
 
@@ -52,11 +70,11 @@
         </a>
         <a href="#" class="menu-item">Careers</a>
         <a href="#" class="menu-item">About</a>
+        <div class="sidebar-button-container">
+          <button class="sidebar-button">Login</button>
+          <button class="sidebar-button" id="register">Register</button>
+        </div>
       </nav>
-      <div class="sidebar-button-container">
-        <button class="sidebar-button">Login</button>
-        <button class="sidebar-button" id="register">Register</button>
-      </div>
     </div>
 
     <main>

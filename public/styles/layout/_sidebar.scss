@@ -10,25 +10,45 @@
   right: 0px;
   height: 100vh;
   transition: 0.7s;
+
+  // sidebar menu
   .menu {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
     padding: 1.5em;
-
+    width: 100%;
     .menu-item {
+      @include flexContainer(flex-start);
       margin-top: 1.5em;
 
       .menu-arrow {
         margin-left: 10px;
-        position: fixed;
       }
     }
+    //sidebar submenu
+    .sub-menu {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.5em;
+      height: 0;
+      transition: 0.7s;
+      overflow-y: hidden;
+
+      .feature {
+        margin-right: 0.8em;
+        height: 20px;
+        width: 18px;
+      }
+    }
+    .features.active,
+    .company.active {
+      height: 60%;
+    }
   }
+  //sidebar buttons
   .sidebar-button-container {
-    width: 60vw;
     margin-top: 1em;
-    padding: 1.5em;
 
     #register {
       border: 1px solid $neutralClrBlack;

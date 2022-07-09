@@ -16,7 +16,7 @@ button {
 
 .sidebar-button {
   height: 40px;
-  width: 100%;
+  min-width: 100%;
   background-color: $neutralClrWhite;
   font-size: $fontXSmall;
   color: $neutralClrGrey;
