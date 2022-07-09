@@ -3,7 +3,7 @@ button {
   border: none;
   width: 120px;
   height: 46px;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .cta-button {
@@ -11,4 +11,20 @@ button {
   color: $neutralClrWhite;
   font-weight: $fontWeightBold;
   width: 150px;
+  margin: 1em;
+}
+
+.sidebar-button {
+  height: 40px;
+  width: 100%;
+  background-color: $neutralClrWhite;
+  font-size: $fontXSmall;
+  color: $neutralClrGrey;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: $neutralClrWhite;
+  z-index: 1;
 }

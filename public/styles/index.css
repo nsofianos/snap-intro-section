@@ -128,16 +128,65 @@ p {
   font-size: 16px;
 }
 
-button {
+button,
+.sidebar {
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
 }
 
 .mobile-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1em 1em 1.5em 1em;
+}
+
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  background-color: hsl(0deg, 0%, 98%);
+  width: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  transition: 0.7s;
+}
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  padding: 1.5em;
+}
+.sidebar .menu .menu-item {
+  margin-top: 1.5em;
+}
+.sidebar .menu .menu-item .menu-arrow {
+  margin-left: 10px;
+  position: fixed;
+}
+.sidebar .sidebar-button-container {
+  width: 60vw;
+  margin-top: 1em;
+  padding: 1.5em;
+}
+.sidebar .sidebar-button-container #register {
+  border: 1px solid hsl(0deg, 0%, 8%);
+}
+
+.is-active {
+  width: 60vw;
 }
 
 .hero-image {
@@ -175,7 +224,7 @@ button {
   border: none;
   width: 120px;
   height: 46px;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .cta-button {
@@ -183,4 +232,20 @@ button {
   color: hsl(0deg, 0%, 98%);
   font-weight: 700;
   width: 150px;
+  margin: 1em;
+}
+
+.sidebar-button {
+  height: 40px;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 98%);
+  font-size: 14px;
+  color: hsl(0deg, 0%, 41%);
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(0deg, 0%, 98%);
+  z-index: 1;
 }/*# sourceMappingURL=index.css.map */

@@ -22,13 +22,39 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Scripts -->
+    <script src="./scripts/sidebar.js"></script>
   </head>
 
   <body>
     <header class="mobile-header">
       <img class="snap-logo" src="./images/logo.svg" />
-      <img class="hamburger-menu" src="./images/icon-menu.svg" />
+      <button class="menu-toggle">
+        <img class="hamburger" src="./images/icon-menu.svg" />
+      </button>
     </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <nav class="menu">
+        <a href="#" class="menu-item"
+          >Features
+          <img class="menu-arrow" src="./images/icon-arrow-down.svg" />
+        </a>
+        <a href="#" class="menu-item"
+          >Company
+
+          <img class="menu-arrow" src="./images/icon-arrow-down.svg" />
+        </a>
+        <a href="#" class="menu-item">Careers</a>
+        <a href="#" class="menu-item">About</a>
+      </nav>
+      <div class="sidebar-button-container">
+        <button class="sidebar-button">Login</button>
+        <button class="sidebar-button" id="register">Register</button>
+      </div>
+    </div>
 
     <main>
       <section class="hero-image-section">

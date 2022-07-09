@@ -1,0 +1,41 @@
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  background-color: $neutralClrWhite;
+  width: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  transition: 0.7s;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 1.5em;
+
+    .menu-item {
+      margin-top: 1.5em;
+
+      .menu-arrow {
+        margin-left: 10px;
+        position: fixed;
+      }
+    }
+  }
+  .sidebar-button-container {
+    width: 60vw;
+    margin-top: 1em;
+    padding: 1.5em;
+
+    #register {
+      border: 1px solid $neutralClrBlack;
+    }
+  }
+}
+
+.is-active {
+  width: 60vw;
+}
