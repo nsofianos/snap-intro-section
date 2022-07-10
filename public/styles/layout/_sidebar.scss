@@ -9,7 +9,7 @@
   top: 0px;
   right: 0px;
   height: 100vh;
-  transition: 0.7s;
+  transition: 0.5s;
 
   // sidebar menu
   .menu {
@@ -33,7 +33,7 @@
       flex-direction: column;
       margin-left: 1.5em;
       height: 0;
-      transition: 0.7s;
+      transition: 0.5s;
       overflow-y: hidden;
 
       .submenu-icon {
@@ -50,12 +50,8 @@
     }
   }
   //sidebar buttons
-  .sidebar-button-container {
+  .login-button-container {
     margin-top: 1em;
-
-    #register {
-      border: 1px solid $neutralClrBlack;
-    }
   }
 }
 

@@ -14,12 +14,15 @@ button {
   margin: 1em;
 }
 
-.sidebar-button {
+.user-button {
   height: 40px;
   min-width: 100%;
   background-color: $neutralClrWhite;
   font-size: $fontXSmall;
   color: $neutralClrGrey;
+}
+.register {
+  border: 1px solid $neutralClrBlack;
 }
 
 .menu-toggle {
@@ -27,4 +30,7 @@ button {
   height: 40px;
   background-color: $neutralClrWhite;
   z-index: 1;
+  @media (min-width: 900px) {
+    display: none;
+  }
 }

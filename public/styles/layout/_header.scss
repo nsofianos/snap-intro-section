@@ -1,4 +1,32 @@
-.mobile-header {
+header {
   @include flexContainer(space-between);
   padding: 1em 1em 1.5em 1em;
+  @media (min-width: 900px) {
+    padding: 1.5em 2em 1.5em 2em;
+  }
+
+  .nav-container {
+    @include flexContainer(center);
+    .snap-logo {
+      margin-right: 3em;
+    }
+    .menu {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+
+  .login-button-container {
+    @media (max-width: 900px) {
+      display: none;
+    }
+    display: flex;
+    .user-button {
+      min-width: 120px;
+    }
+  }
+  .menu-item {
+    margin-right: 2em;
+  }
 }

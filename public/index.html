@@ -31,9 +31,53 @@
     <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- Mobile Header -->
-    <header class="mobile-header">
-      <img class="snap-logo" src="./images/logo.svg" />
+    <!-- Header -->
+    <header class="header">
+      <div class="nav-container">
+        <img class="snap-logo" src="./images/logo.svg" />
+        <nav class="menu">        
+          <!-- Features Menu -->
+          <a href="#" class="menu-item submenu-toggle"
+          >Features
+            <img class="menu-arrow" src="./images/icon-arrow-down.svg" />
+          </a>
+          <!-- <div class="sub-menu features">
+            <a href="#" class="menu-item">
+              <img class="submenu-icon" src="./images/icon-todo.svg">Todo List</img>
+            </a>
+            <a href="#" class="menu-item">
+              <img class="submenu-icon" src="./images/icon-calendar.svg">Calendar</img>
+            </a>
+            <a href="#" class="menu-item">
+              <img class="submenu-icon" src="./images/icon-reminders.svg">Reminders</img>
+            </a>
+            <a href="#" class="menu-item">
+              <img class="submenu-icon" src="./images/icon-planning.svg">Planning</img>
+            </a>
+          </div> -->
+          
+          <!-- Company Menu -->
+          <a href="#" class="menu-item submenu-toggle"
+          >Company
+          <img class="menu-arrow" src="./images/icon-arrow-down.svg" />
+        </a>
+        <!-- <div class="sub-menu company">
+          <a href="#" class="menu-item">History</a>
+            <a href="#" class="menu-item">Our Team</a>
+            <a href="#" class="menu-item">Blog</a>
+          </div> -->
+          
+          <a href="#" class="menu-item">Careers</a>
+          <a href="#" class="menu-item">About</a>
+        </nav>
+      </div>
+
+      <div class="login-button-container">
+        <button class="user-button login">Login</button>
+        <button class="user-button register" id="register">Register</button>
+      </div>
+
+      <!-- Mobile hamburger menu -->
       <button class="menu-toggle">
         <img class="hamburger" src="./images/icon-menu.svg" />
       </button>
@@ -41,7 +85,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <nav class="menu">
+      <nav class="menu">        
         <!-- Features Menu -->
         <a href="#" class="menu-item submenu-toggle"
           >Features
@@ -75,9 +119,9 @@
 
         <a href="#" class="menu-item">Careers</a>
         <a href="#" class="menu-item">About</a>
-        <div class="sidebar-button-container">
-          <button class="sidebar-button">Login</button>
-          <button class="sidebar-button" id="register">Register</button>
+        <div class="login-button-container">
+          <button class="user-button login">Login</button>
+          <button class="user-button register">Register</button>
         </div>
       </nav>
     </div>
