@@ -1,4 +1,8 @@
 .hero-image-section {
+  @include breakpoint(tablet, min-width) {
+    width: 40%;
+    max-width: 540px;
+  }
   .hero-image {
     width: 100%;
   }
@@ -15,10 +19,25 @@
 .hero-cta-section {
   padding: 1em;
   @include flexContainer(column);
+  @include breakpoint(tablet, min-width) {
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+    max-width: 700px;
+  }
+  .cta-header {
+    &:after {
+      content: " remote work";
+      @include breakpoint(tablet, min-width) {
+        display: block;
+      }
+    }
+  }
 
   .cta-content {
-    margin-top: 1em;
+    margin-top: 2.5em;
     margin-bottom: 1em;
+    max-width: 65%;
   }
 
   .client-logo-container {

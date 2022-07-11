@@ -122,6 +122,11 @@ h1 {
   color: hsl(0deg, 0%, 8%);
   font-size: 35px;
 }
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 
 p {
   line-height: 1.5;
@@ -144,11 +149,14 @@ a {
   color: hsl(0deg, 0%, 41%);
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
+@media only screen and (min-width: 900px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 4em;
+  }
 }
 
 header {
@@ -255,6 +263,12 @@ header .menu-item {
   width: 60vw;
 }
 
+@media only screen and (min-width: 900px) {
+  .hero-image-section {
+    width: 40%;
+    max-width: 540px;
+  }
+}
 .hero-image-section .hero-image {
   width: 100%;
 }
@@ -276,9 +290,26 @@ header .menu-item {
   justify-content: center;
   flex-direction: column;
 }
+@media only screen and (min-width: 900px) {
+  .hero-cta-section {
+    align-items: flex-start;
+    text-align: start;
+    width: 60%;
+    max-width: 700px;
+  }
+}
+.hero-cta-section .cta-header:after {
+  content: " remote work";
+}
+@media only screen and (min-width: 900px) {
+  .hero-cta-section .cta-header:after {
+    display: block;
+  }
+}
 .hero-cta-section .cta-content {
-  margin-top: 1em;
+  margin-top: 2.5em;
   margin-bottom: 1em;
+  max-width: 65%;
 }
 .hero-cta-section .client-logo-container {
   margin-top: 1em;
@@ -320,6 +351,11 @@ button {
   width: 150px;
   margin: 1em;
 }
+@media only screen and (min-width: 900px) {
+  .cta-button {
+    margin: 1.5rem 0 5rem 0;
+  }
+}
 
 .user-button {
   height: 40px;
@@ -338,4 +374,9 @@ button {
   height: 40px;
   background-color: hsl(0deg, 0%, 98%);
   z-index: 1;
+}
+@media only screen and (min-width: 900px) {
+  .menu-toggle {
+    display: none !important;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -8,5 +8,8 @@ a {
 }
 
 main {
-  @include flexContainer(row-reverse);
+  @include breakpoint(tablet, min-width) {
+    @include flexContainer(row-reverse);
+    padding: 4em;
+  }
 }

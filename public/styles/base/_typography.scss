@@ -11,6 +11,9 @@ h1 {
   font-weight: $fontWeightBold;
   color: $neutralClrBlack;
   font-size: 35px;
+  @include breakpoint(tablet, min-width) {
+    font-size: 5rem;
+  }
 }
 
 p {
