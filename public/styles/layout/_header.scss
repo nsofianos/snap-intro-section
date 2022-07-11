@@ -1,19 +1,26 @@
 header {
-  @include flexContainer(space-between);
+  @include flexContainer(row, space-between);
   padding: 1em 1em 1.5em 1em;
   @include breakpoint(tablet, min-width) {
     padding: 1.5em 2em 1.5em 2em;
   }
 
+  .menu {
+    @include screenOnly(desktop);
+  }
+
   .nav-container {
-    @include flexContainer(center);
+    @include flexContainer();
+
     .snap-logo {
       margin-right: 3em;
     }
   }
 
   .login-button-container {
+    @include screenOnly(desktop);
     display: flex;
+
     .user-button {
       min-width: 120px;
     }

@@ -1,7 +1,5 @@
 .sidebar {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  @include flexContainer(column, flex-start, flex-start);
   text-align: left;
   background-color: $neutralClrWhite;
   width: 0;
@@ -13,13 +11,13 @@
 
   // sidebar menu
   .menu {
-    display: flex;
-    flex-direction: column;
+    @include flexContainer(column, center, flex-start);
     margin-top: 2em;
     padding: 1.5em;
     width: 100%;
+
     .menu-item {
-      @include flexContainer(flex-start);
+      @include flexContainer(row, flex-start);
       margin-top: 20px;
       min-height: 20px;
 
@@ -29,8 +27,7 @@
     }
     //sidebar submenu
     .sub-menu {
-      display: flex;
-      flex-direction: column;
+      @include flexContainer(column, center, flex-start);
       margin-left: 1.5em;
       height: 0;
       transition: 0.5s;

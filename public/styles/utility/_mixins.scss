@@ -1,7 +1,8 @@
-@mixin flexContainer($justify) {
+@mixin flexContainer($dir: row, $justify: center, $align: center) {
   display: flex;
-  align-items: center;
+  align-items: $align;
   justify-content: $justify;
+  flex-direction: $dir;
 }
 
 @mixin breakpoint($point, $type) {
@@ -16,6 +17,18 @@
   } @else if $point == mobile {
     @media only screen and ($type: 600px) {
       @content;
+    }
+  }
+}
+
+@mixin screenOnly($screen) {
+  @if $screen == desktop {
+    @include breakpoint(tablet, max-width) {
+      display: none !important;
+    }
+  } @else if $screen == mobile {
+    @include breakpoint(tablet, min-width) {
+      display: none !important;
     }
   }
 }

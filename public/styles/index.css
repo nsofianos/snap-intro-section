@@ -144,22 +144,18 @@ a {
   color: hsl(0deg, 0%, 41%);
 }
 
-@media only screen and (min-width: 900px) {
-  .mobile-only {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .desktop-only {
-    display: none !important;
-  }
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   padding: 1em 1em 1.5em 1em;
 }
 @media only screen and (min-width: 900px) {
@@ -167,16 +163,27 @@ header {
     padding: 1.5em 2em 1.5em 2em;
   }
 }
+@media only screen and (max-width: 900px) {
+  header .menu {
+    display: none !important;
+  }
+}
 header .nav-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 header .nav-container .snap-logo {
   margin-right: 3em;
 }
 header .login-button-container {
   display: flex;
+}
+@media only screen and (max-width: 900px) {
+  header .login-button-container {
+    display: none !important;
+  }
 }
 header .login-button-container .user-button {
   min-width: 120px;
@@ -188,6 +195,7 @@ header .menu-item {
 .sidebar {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   text-align: left;
   background-color: hsl(0deg, 0%, 98%);
@@ -200,6 +208,8 @@ header .menu-item {
 }
 .sidebar .menu {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
   margin-top: 2em;
   padding: 1.5em;
@@ -209,6 +219,7 @@ header .menu-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: row;
   margin-top: 20px;
   min-height: 20px;
 }
@@ -217,6 +228,8 @@ header .menu-item {
 }
 .sidebar .menu .sub-menu {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
   margin-left: 1.5em;
   height: 0;
@@ -242,8 +255,18 @@ header .menu-item {
   width: 60vw;
 }
 
-.hero-image {
+.hero-image-section .hero-image {
   width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .hero-image-section #hero-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .hero-image-section #hero-mobile {
+    display: none !important;
+  }
 }
 
 .hero-cta-section {
@@ -262,6 +285,7 @@ header .menu-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 .hero-cta-section .client-logo-container .client-logo {
   width: 25%;

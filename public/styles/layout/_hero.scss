@@ -1,11 +1,20 @@
-.hero-image {
-  width: 100%;
+.hero-image-section {
+  .hero-image {
+    width: 100%;
+  }
+
+  #hero-desktop {
+    @include screenOnly(desktop);
+  }
+
+  #hero-mobile {
+    @include screenOnly(mobile);
+  }
 }
 
 .hero-cta-section {
   padding: 1em;
-  @include flexContainer(center);
-  flex-direction: column;
+  @include flexContainer(column);
 
   .cta-content {
     margin-top: 1em;
@@ -14,12 +23,14 @@
 
   .client-logo-container {
     margin-top: 1em;
-    @include flexContainer(center);
+    @include flexContainer();
+
     .client-logo {
       width: 25%;
       padding: 0.4em;
       height: 100%;
     }
+
     #audiophile {
       width: 70px;
     }
