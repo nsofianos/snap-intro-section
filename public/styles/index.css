@@ -150,7 +150,7 @@ header {
   justify-content: space-between;
   padding: 1em 1em 1.5em 1em;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   header {
     padding: 1.5em 2em 1.5em 2em;
   }
@@ -163,7 +163,7 @@ header .nav-container {
 header .nav-container .snap-logo {
   margin-right: 3em;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   header .nav-container .menu {
     display: none;
   }
@@ -171,7 +171,7 @@ header .nav-container .snap-logo {
 header .login-button-container {
   display: flex;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   header .login-button-container {
     display: none;
   }
@@ -313,7 +313,7 @@ button {
   background-color: hsl(0deg, 0%, 98%);
   z-index: 1;
 }
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .menu-toggle {
     display: none;
   }

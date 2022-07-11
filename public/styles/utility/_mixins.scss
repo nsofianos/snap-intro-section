@@ -3,3 +3,19 @@
   align-items: center;
   justify-content: $justify;
 }
+
+@mixin breakpoint($point, $type) {
+  @if $point == desktop {
+    @media only screen and ($type: 1024px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and ($type: 900px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media only screen and ($type: 600px) {
+      @content;
+    }
+  }
+}

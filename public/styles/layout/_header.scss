@@ -1,7 +1,7 @@
 header {
   @include flexContainer(space-between);
   padding: 1em 1em 1.5em 1em;
-  @media (min-width: 900px) {
+  @include breakpoint(tablet, min-width) {
     padding: 1.5em 2em 1.5em 2em;
   }
 
@@ -11,14 +11,14 @@ header {
       margin-right: 3em;
     }
     .menu {
-      @media (max-width: 900px) {
+      @include breakpoint(tablet, max-width) {
         display: none;
       }
     }
   }
 
   .login-button-container {
-    @media (max-width: 900px) {
+    @include breakpoint(tablet, max-width) {
       display: none;
     }
     display: flex;

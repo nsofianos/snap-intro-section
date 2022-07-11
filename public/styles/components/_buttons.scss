@@ -30,7 +30,7 @@ button {
   height: 40px;
   background-color: $neutralClrWhite;
   z-index: 1;
-  @media (min-width: 900px) {
+  @include breakpoint(tablet, min-width) {
     display: none;
   }
 }
