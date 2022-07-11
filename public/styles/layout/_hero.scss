@@ -1,7 +1,7 @@
 .hero-image-section {
   @include breakpoint(tablet, min-width) {
     width: 40%;
-    max-width: 540px;
+    max-width: 480px;
   }
   .hero-image {
     width: 100%;
@@ -20,7 +20,9 @@
   padding: 1em;
   @include flexContainer(column);
   @include breakpoint(tablet, min-width) {
+    padding: 0;
     align-items: flex-start;
+    justify-content: flex-end;
     text-align: start;
     width: 60%;
     max-width: 700px;
@@ -35,23 +37,23 @@
   }
 
   .cta-content {
-    margin-top: 2.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
-    max-width: 65%;
+    @include breakpoint(tablet, min-width) {
+      margin-top: 2.5em;
+      max-width: 65%;
+      font-size: $fontMedium;
+    }
   }
 
   .client-logo-container {
     margin-top: 1em;
-    @include flexContainer();
+    @include flexContainer(row, flex-start);
 
     .client-logo {
-      width: 25%;
-      padding: 0.4em;
-      height: 100%;
-    }
-
-    #audiophile {
-      width: 70px;
+      @include breakpoint(tablet, min-width) {
+        margin-right: 2em;
+      }
     }
   }
 }

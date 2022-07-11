@@ -9,7 +9,7 @@ a {
 
 main {
   @include breakpoint(tablet, min-width) {
-    @include flexContainer(row-reverse);
+    @include flexContainer(row-reverse, space-evenly, stretch);
     padding: 4em;
   }
 }
