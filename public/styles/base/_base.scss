@@ -6,3 +6,15 @@ a {
   text-decoration: none;
   color: $neutralClrGrey;
 }
+
+.mobile-only {
+  @include breakpoint(tablet, min-width) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include breakpoint(tablet, max-width) {
+    display: none !important;
+  }
+}

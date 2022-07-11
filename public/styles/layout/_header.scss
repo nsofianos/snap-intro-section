@@ -10,17 +10,9 @@ header {
     .snap-logo {
       margin-right: 3em;
     }
-    .menu {
-      @include breakpoint(tablet, max-width) {
-        display: none;
-      }
-    }
   }
 
   .login-button-container {
-    @include breakpoint(tablet, max-width) {
-      display: none;
-    }
     display: flex;
     .user-button {
       min-width: 120px;
