@@ -34,7 +34,8 @@ button {
   border: 1px solid $neutralClrGrey;
 }
 
-.login {
+.login,
+.menu-toggle {
   &:hover {
     border: none;
   }

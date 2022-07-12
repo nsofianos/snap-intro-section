@@ -417,7 +417,8 @@ button:hover {
   border: 1px solid hsl(0deg, 0%, 41%);
 }
 
-.login:hover {
+.login:hover,
+.menu-toggle:hover {
   border: none;
 }
 
