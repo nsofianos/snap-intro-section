@@ -242,7 +242,7 @@ header .menu-item {
   top: 0px;
   right: 0px;
   height: 100vh;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 .sidebar .menu {
   display: flex;
@@ -271,7 +271,7 @@ header .menu-item {
   flex-direction: column;
   margin-left: 1.5em;
   height: 0;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
   overflow-y: hidden;
 }
 .sidebar .menu .sub-menu .submenu-icon {

@@ -7,7 +7,7 @@
   top: 0px;
   right: 0px;
   height: 100vh;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
 
   // sidebar menu
   .menu {
@@ -30,7 +30,7 @@
       @include flexContainer(column, center, flex-start);
       margin-left: 1.5em;
       height: 0;
-      transition: 0.5s;
+      transition: all 0.3s ease-in-out;
       overflow-y: hidden;
 
       .submenu-icon {
