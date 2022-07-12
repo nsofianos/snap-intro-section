@@ -148,6 +148,9 @@ a {
   text-decoration: none;
   color: hsl(0deg, 0%, 41%);
 }
+a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
 
 @media only screen and (min-width: 900px) {
   main {
@@ -382,6 +385,11 @@ button {
   height: 46px;
   border-radius: 12px;
 }
+button:hover {
+  color: hsl(0deg, 0%, 8%);
+  background-color: hsl(0deg, 0%, 98%);
+  border: 1px solid hsl(0deg, 0%, 8%);
+}
 
 .cta-button {
   background-color: hsl(0deg, 0%, 8%);
@@ -393,6 +401,7 @@ button {
 @media only screen and (min-width: 900px) {
   .cta-button {
     margin: 1.5rem 0 7rem 0;
+    height: 56px;
   }
 }
 
@@ -405,7 +414,11 @@ button {
 }
 
 .register {
-  border: 1px solid hsl(0deg, 0%, 8%);
+  border: 1px solid hsl(0deg, 0%, 41%);
+}
+
+.login:hover {
+  border: none;
 }
 
 .menu-toggle {

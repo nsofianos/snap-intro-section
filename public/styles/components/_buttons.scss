@@ -4,6 +4,11 @@ button {
   width: 120px;
   height: 46px;
   border-radius: 12px;
+  &:hover {
+    color: $neutralClrBlack;
+    background-color: $neutralClrWhite;
+    border: 1px solid $neutralClrBlack;
+  }
 }
 
 .cta-button {
@@ -14,6 +19,7 @@ button {
   margin: 1em 1em 3em 1em;
   @include breakpoint(tablet, min-width) {
     margin: 1.5rem 0 7rem 0;
+    height: 56px;
   }
 }
 
@@ -25,7 +31,13 @@ button {
   color: $neutralClrGrey;
 }
 .register {
-  border: 1px solid $neutralClrBlack;
+  border: 1px solid $neutralClrGrey;
+}
+
+.login {
+  &:hover {
+    border: none;
+  }
 }
 
 .menu-toggle {

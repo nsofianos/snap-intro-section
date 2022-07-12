@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
   color: $neutralClrGrey;
+  &:hover {
+    color: $neutralClrBlack;
+  }
 }
 
 main {
