@@ -7,6 +7,34 @@ header {
 
   .menu {
     @include screenOnly(desktop);
+    position: relative;
+
+    .sub-menu.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+    #company {
+      left: 120px;
+    }
+
+    .sub-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 30px;
+      left: -80px;
+      gap: 1em;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+
+      .submenu-icon {
+        margin-right: 0.8em;
+        height: 20px;
+        width: 18px;
+      }
+    }
   }
 
   .nav-container {

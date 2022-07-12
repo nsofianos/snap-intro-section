@@ -171,10 +171,37 @@ header {
     padding: 1.5em 2em 1.5em 2em;
   }
 }
+header .menu {
+  position: relative;
+}
 @media only screen and (max-width: 900px) {
   header .menu {
     display: none !important;
   }
+}
+header .menu .sub-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+header .menu #company {
+  left: 120px;
+}
+header .menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  gap: 1em;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+header .menu .sub-menu .submenu-icon {
+  margin-right: 0.8em;
+  height: 20px;
+  width: 18px;
 }
 header .nav-container {
   display: flex;
@@ -339,6 +366,13 @@ header .menu-item {
   position: fixed;
   background-color: #060606;
   transition: 1s;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
 }
 
 button {
